@@ -1,6 +1,6 @@
 {
   "name": "application-js-explorer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Look for an url of application.js from Rails server",
   "main": "index.js",
   "scripts": {
