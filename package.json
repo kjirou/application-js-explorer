@@ -1,24 +1,25 @@
 {
-  "name": "application-js-fetcher",
+  "name": "application-js-explorer",
   "version": "0.0.0",
-  "description": "Fetch an application.js of Rails server and copies into any directory",
+  "description": "Look for an url of application.js from Rails server",
   "main": "index.js",
   "scripts": {
     "test": "$(npm bin)/mocha --recursive test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kjirou/application-js-fetcher.git"
+    "url": "git+https://github.com/kjirou/application-js-explorer.git"
   },
   "keywords": [
-    "rails"
+    "rails",
+    "sprockets"
   ],
   "author": "kjirou",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kjirou/application-js-fetcher/issues"
+    "url": "https://github.com/kjirou/application-js-explorer/issues"
   },
-  "homepage": "https://github.com/kjirou/application-js-fetcher#readme",
+  "homepage": "https://github.com/kjirou/application-js-explorer#readme",
   "bin": {
     "fetch-application-js": "bin/fetch-application-js"
   },
@@ -28,7 +29,12 @@
     "lib",
     "package.json"
   ],
+  "dependencies": {
+    "request": "^2.81.0",
+    "url": "^0.11.0"
+  },
   "devDependencies": {
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
   }
 }

@@ -1,2 +1,3 @@
-# application-js-fetcher
-Fetch an application.js of Rails server and copies into any directory
+# application-js-explorer
+
+Look for an url of application.js from Rails server
