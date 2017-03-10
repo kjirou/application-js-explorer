@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+const minimist = require('minimist');
+
+const { searchApplicationJsUrl } = require('../lib/application-js-explorer');
+
+
+const commandOptions = minimist(process.argv.slice(2), {
+});
+const targetUrl = commandOptions._[0];
+
+if (targetUrl === undefined) {
+  throw new Error('There is no URL of the first argument');
+}
+
+
+searchApplicationJsUrl(targetUrl)
+  .then(applicationJsUrl => {
+    console.log(applicationJsUrl || '');
+    process.exit(0);
+  })
+  .catch(error => {
+    console.error(error);
+    process.exit(1);
+  })
+;

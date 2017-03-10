@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/kjirou/application-js-explorer#readme",
   "bin": {
-    "fetch-application-js": "bin/fetch-application-js"
+    "explore-application-js": "bin/explore-application-js"
   },
   "files": [
     "bin",
@@ -30,8 +30,9 @@
     "package.json"
   ],
   "dependencies": {
-    "request": "^2.81.0",
-    "url": "^0.11.0"
+    "minimist": "1.2.0",
+    "request": "2.81.0",
+    "url": "0.11.0"
   },
   "devDependencies": {
     "mocha": "^3.2.0"
